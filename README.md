@@ -7,3 +7,4 @@ Landcover mapping created from SAR multiband imagery. Utilizes a Deep UNET archi
 - composites.py begins by creating 3 derived layers (NDVI, EVI, and texture), before stacking all layers to create 7-band imagery from SAR Aerial Imagery inputs.
 - prediction.py feeds these bands into a Deep UNET model, created in Keras. This returns 7 prediction layers with prediction confidence recorded for each pixel.
 - classify.py assigns a landcover class to each pixel based on the class confidence. Finally, all images are merged together to form a county-level landcover map.
+- execution.py combines the functions from the other modules and receives a list of counties from the user.
